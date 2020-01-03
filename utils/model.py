@@ -75,6 +75,7 @@ def model_thresholding():
     concat_2 = Concatenate(axis=1)([convt_2,conv_1])
     conv_5 = Conv3D(filters=1,kernel_size=(3, 3, 3),padding='same',activation='sigmoid',name = "CONV3D_5",data_format=IMAGE_ORDERING)(concat_2)
     return Model(img_input, conv_5)
-    concat_2 = Concatenate(axis=1)([convt_2,conv_1])
-    conv_5 = Conv3D(filters=1,kernel_size=(3, 3, 3),padding='same',activation='sigmoid',name = "CONV3D_5",data_format=IMAGE_ORDERING)(concat_2)
-    return Model(img_input, conv_5)
+
+    #concat_2 = Concatenate(axis=1)([convt_2,conv_1])
+    #conv_5 = Conv3D(filters=1,kernel_size=(3, 3, 3),padding='same',activation='sigmoid',name = "CONV3D_5",data_format=IMAGE_ORDERING)(concat_2)
+    #return Model(img_input, conv_5)
